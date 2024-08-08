@@ -24,5 +24,5 @@ If you need to select the directory to save the dataset, the number of superpixe
 
 To train and predict:
 ```bash
-pythoin train.py
+python train.py
 ```
