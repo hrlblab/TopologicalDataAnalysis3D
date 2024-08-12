@@ -20,7 +20,7 @@ def download_and_save_medmnist(dataset_name, target_dir):
     def save_data(dataset, split):
         split_dir = os.path.join(base_dir, split)
         for idx, (img, label) in enumerate(zip(dataset.imgs, dataset.labels)):
-            label_dir = os.path.join(split_dir, str(label[0]))
+            label_dir = os.path.join(split_dir, str(label))
             if not os.path.exists(label_dir):
                 os.makedirs(label_dir)
             original_filename = dataset.filename[idx] if hasattr(dataset, 'filename') else str(idx)
