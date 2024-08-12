@@ -16,6 +16,10 @@ To download the MedMNist dataset into the 'data' folder:
 ```bash
 python DownloadMedMNist.py
 ```
+To rename the folder of dataset:
+```bash
+python datafolderRename.py
+```
 To convert 3D medical images into persistence images:
 ```bash
 python preprocess.py
